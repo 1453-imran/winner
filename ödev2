@@ -1,0 +1,34 @@
+//KDV alma
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+                double anaPara, kdvOranı, kdvTutarı, sonTutar;
+                Scanner input = new Scanner(System.in);
+
+        System.out.print("anaPara Tutarı:");
+        anaPara= input.nextDouble();
+        if (anaPara<=1000){
+            kdvOranı=0.18;
+            kdvTutarı=anaPara*kdvOranı;
+            sonTutar= anaPara+kdvTutarı;
+            System.out.println("anaPara:"+ anaPara);
+            System.out.println("kdvOranı:"+ kdvOranı);
+            System.out.println("kdvTutarı:"+kdvTutarı);
+            System.out.println("sonTutar:"+sonTutar);}
+            else if  ( anaPara>1000);{
+
+                kdvOranı=0.08;
+                kdvTutarı=anaPara*kdvOranı;
+                sonTutar= anaPara+kdvTutarı;
+            System.out.println("anaPara:"+ anaPara);
+            System.out.println("kdvOranı:"+ kdvOranı);
+            System.out.println("kdvTutarı:"+kdvTutarı);
+            System.out.println("sonTutar:"+sonTutar);
+            }
+        }
+
+
+            }
+
