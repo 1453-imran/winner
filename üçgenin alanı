@@ -1,0 +1,24 @@
+//Üçgen alanı alma
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+                int a, b, c;
+                double u, sondeger;
+
+                Scanner alan = new Scanner(System.in);
+
+        System.out.print("Birinci uzunluk : ");
+        a= alan.nextInt();
+        System.out.print("İkinci uzunluk : ");
+        b= alan.nextInt();
+        System.out.print("Üçüncü uzunluk : ");
+        c= alan.nextInt();
+        u=(a+b+c)/2;
+        System.out.println("Üçgenin çevresi:"+ u);
+        sondeger=Math.sqrt(u*(u-a)*(u-b)*(u-c));
+            System.out.println("Üçgenin alanı:"+ sondeger);
+
+            }
+        }
