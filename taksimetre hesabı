@@ -1,0 +1,25 @@
+//Taksimete hesabı
+
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+
+                double km, kmBasi=2.20, toplamTutar, baslamaFiyat=10;
+
+                Scanner tutar = new Scanner(System.in);
+
+        System.out.print("Kilometre Değeri : ");
+        km= tutar.nextDouble();
+        toplamTutar= (km*kmBasi);
+        toplamTutar=toplamTutar+baslamaFiyat;
+        System.out.println("Toplam Tutar:"+ toplamTutar);
+        if (toplamTutar<20){
+            toplamTutar=20;
+            System.out.print("Verilmesi Gereken Miktar:"+ toplamTutar);
+        }
+
+
+            }
+        }
