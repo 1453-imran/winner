@@ -1,0 +1,21 @@
+//Dairenin diliminin alanı 
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+                double r, pi=3.14, daireDilimAlanı;
+                float aci;
+        Scanner daire= new Scanner(System.in);
+
+                System.out.print("Daire yarı çapı :");
+                r= daire.nextDouble();
+                System.out.print("Dairenin Açısnı Giriniz: ");
+                aci=daire.nextFloat();
+                daireDilimAlanı= (pi*r*r*aci)/360;
+                System.out.println("Daira Dilimin Alanı : "+ daireDilimAlanı);
+
+        }
+
+
+            }
