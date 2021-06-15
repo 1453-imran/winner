@@ -1,0 +1,31 @@
+//Manav Kasa Programı
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+                float a, e, d, m, p;
+                double armutFiyat=2.14, elmaFiyat=3.67, domtesFiyat=1.11, muzFiyat=0.95, patlıcanFiyat=5.00, armut, elma, domates, muz, patlıcan, toplamTutar;
+                        Scanner meyve = new Scanner(System.in);
+
+                System.out.print("Armut Kaç Kilo :");
+                a= meyve.nextFloat();
+                System.out.print("Elma Kaç Kilo: ");
+                 e= meyve.nextFloat();
+                 System.out.print("Domates Kaç Kilo :");
+                 d= meyve.nextFloat();
+                System.out.print("Muz Kaç Kilo :");
+                 m= meyve.nextFloat();
+                 System.out.print("Patlıcan Kaç Kilo :");
+                 p= meyve.nextFloat();
+                 armut=a*armutFiyat;
+                 elma=e*elmaFiyat;
+                 domates=d*domtesFiyat;
+                 muz=m*muzFiyat;
+                 patlıcan=p*patlıcanFiyat;
+                 toplamTutar=armut+elma+domates+muz+patlıcan;
+                System.out.println("Toplam Tutar : "+ toplamTutar);
+
+        }
+
+            }
