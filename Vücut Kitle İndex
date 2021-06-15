@@ -1,0 +1,21 @@
+//Vücut Kİtle İndex bulma
+
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+                float kilo, boy, boyKitleEndex;
+
+        Scanner kitle= new Scanner(System.in);
+
+                System.out.print("Boyunuzu metre cinsinden giriniz :");
+                boy= kitle.nextFloat();
+                System.out.print("Kİlonuzu Giriniz: ");
+               kilo= kitle.nextFloat();
+        boyKitleEndex= kilo/(boy*boy);
+                System.out.println("Vücut Kitle İndeksiniz : "+ boyKitleEndex);
+
+        }
+
+            }
