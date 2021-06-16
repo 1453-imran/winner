@@ -1,0 +1,33 @@
+//Basit Hesap Makinası yapımı
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+            int number1, number2, select;
+
+            Scanner input = new Scanner(System.in);
+            System.out.print("Sayı 1 Değeri Giriniz : ");
+            number1= input.nextInt();
+            System.out.print("Sayı 2 Değerini Giriniz : ");
+            number2=input.nextInt();
+        System.out.print("Hangi işlemi yapmak istiyorsunuz? : ");
+        System.out.print("\n 1-Toplama\n 2-Cikarma \n 3-carpma\n 4-bolme : ");
+        select=input.nextInt();
+            switch (select){
+                case 1:
+                    System.out.print("Hesaplanan Toplama Değeri :"+(number1+number2));
+                    break;
+                case 2:
+                    System.out.print("Hesaplanan Çıkarma Değeri"+(number1-number2) );;
+                    break;
+                case 3:
+                    System.out.print("Hesaplanan Çarpma Değeri :"+(number1*number2));
+                    break;
+                case 4:
+                    System.out.print("Hesaplanan Bölme Değeri :"+(number1/number2));
+                    break;
+                default:
+                    System.out.print("Yanlış Hesaplama");
+            }
+        }
+            }
