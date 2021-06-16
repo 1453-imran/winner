@@ -1,0 +1,40 @@
+//Yeni şifre oluştrma
+import java.util.Scanner;
+import java.lang.String;
+public class Giris {
+    public static void main(String[] args) {
+
+                Scanner sifreleme = new Scanner(System.in);
+                String kullaniciAdi = "javaegitimi";
+                int sifre = 1453;
+        System.out.print("Kullanici adinizi giriniz: ");
+        String isim = sifreleme.nextLine();
+        System.out.print("Sifreyi giriniz: ");
+        int sifreGiris = sifreleme.nextInt();
+        if(isim.equals(kullaniciAdi) && sifreGiris == sifre){
+            System.out.println("hosgeldiniz");
+        }else{
+            System.out.println("Giriş Başarısız");
+            System.out.print("Sifrenizi sıfırlamak ister misiniz? 1-evet||2-hayır: ");
+            int degisim = sifreleme.nextInt();
+            switch(degisim){
+                case 1:
+                    System.out.print("Yeni sifrenizi giriniz: ");
+                    int yeniSifre = sifreleme.nextInt();
+                    if(yeniSifre == sifre || yeniSifre == sifreGiris){
+                        System.out.println("Şifre oluşturulamadı, lütfen tekrar deneyiniz");
+                    }else{
+                        System.out.println("Sifre başarılı ");
+                        sifre = yeniSifre;
+                    }
+                    break;
+                case 2:
+                    System.out.println("Şifre sıfırlama iptal edildi");
+                    break;
+                default:
+                    System.out.println("Belirtilen değerleri seçiniz!!");
+            }
+        }
+    }
+
+}
