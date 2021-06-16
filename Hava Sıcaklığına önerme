@@ -1,0 +1,25 @@
+//Hava sıcaklığına etkinlik önerme
+import java.util.Scanner;
+public class Giris {
+    public static void main(String[] args) {
+        int sıcaklık;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Sıcaklık Değeri : ");
+        sıcaklık = input.nextInt();
+
+        if (sıcaklık<5){
+            System.out.print("Kayak Yapabilirsiniz");
+        }
+        else if(sıcaklık>5 || sıcaklık<15){
+            System.out.print("Sinemaya gidebilirsiniz");
+        }
+        else if(sıcaklık>10|| sıcaklık<=25){
+            System.out.print("Piknik de tercih edebilirsiniz");
+        }
+else {
+    System.out.print("Yüzmeye gidebilirsiniz");
+        }
+
+                       }
+}
