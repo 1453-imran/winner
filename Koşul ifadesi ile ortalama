@@ -1,0 +1,34 @@
+//Ortalama
+import java.util.Scanner;
+public class Giris {
+    public static void main(String[] args) {
+        int mat, fizik, turk, kimya, muzik;
+
+        Scanner ort = new Scanner(System.in);
+        System.out.print("Matematik Notunuz : ");
+        mat = ort.nextInt();
+        System.out.print("Fizik Notunuz : ");
+        fizik = ort.nextInt();
+        System.out.print("Türkçe Notunuz : ");
+        turk = ort.nextInt();
+        System.out.print("Kimya Notunuz : ");
+        kimya = ort.nextInt();
+        System.out.print("Müzik Notunuz : ");
+        muzik = ort.nextInt();
+        double ortalama = ((mat + fizik + turk + kimya + muzik) / 5);
+        if ((mat>0 && mat < 100) && (fizik>0 && fizik < 100) && (turk>0 && turk < 100) && (kimya>0 && kimya < 100) && (muzik>0 && muzik < 100)) {
+
+                      if (ortalama <= 55) {
+                          System.out.println("Sınıfı Geçemediniz "+ ortalama);
+            }
+                      else {
+                System.out.print("Ortalama Hesaplanamadı !!");
+            }
+
+            }
+        else {
+            System.out.print("Sınıfı Geçtiniz "+ ortalama);
+            System.out.println("Ortalamanız : " + ortalama);
+        }
+    }
+}
