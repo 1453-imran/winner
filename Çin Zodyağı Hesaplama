@@ -1,0 +1,50 @@
+//Çin Zodyağı Hesaplama
+
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int dogumYılı;
+        System.out.print("Doğum Yılınızı Giriniz : ");
+        dogumYılı=input.nextInt();
+        if(dogumYılı%12==0){
+            System.out.print(" Doğum yılınız : Maymun ");
+        }
+        else if(dogumYılı%12==1){
+            System.out.print("Doğum yılınız : Horoz ");
+        }
+        else if(dogumYılı%12==2){
+            System.out.print("Doğum yılınız : Köpek ");
+        }
+        else if(dogumYılı%12==3){
+            System.out.print("Doğum yılınız : Domuz ");
+        }
+        else if(dogumYılı%12==4){
+            System.out.print("Doğum yılınız : Fare ");
+        }
+        else if(dogumYılı%12==5){
+            System.out.print("Doğum yılınız : Öküz ");
+        }
+        else if(dogumYılı%12==6){
+            System.out.print("Doğum yılınız : Kaplan  ");
+        }
+        else if(dogumYılı%12==7){
+            System.out.print("Doğum yılınız : Tavşan ");
+        }
+        else if(dogumYılı%12==8){
+            System.out.print("Doğum yılınız : Ejderha ");
+        }
+        else if(dogumYılı%12==9){
+            System.out.print("Doğum yılınız : Yılan ");
+        }
+        else if(dogumYılı%12==10){
+            System.out.print("Doğum yılınız : At ");
+        }
+        else if (dogumYılı%12==11){
+            System.out.print("Doğum yılınız : Koyun ");
+
+        }
+    }
+}
