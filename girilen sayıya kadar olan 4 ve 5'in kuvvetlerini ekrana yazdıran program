@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class Giris {
+    public static void main(String[] args) {
+
+        Scanner kuvvet = new Scanner(System.in);
+        System.out.print("Sayi giriniz : ");
+
+        int sayi;
+        sayi= kuvvet.nextInt();
+        for(int i=1;i<=sayi;i++){
+
+            System.out.print("4'ün kuvveti :"+ Math.pow(i, 4));
+            System.out.print("\t 5'in kuvveti : "+Math.pow(i, 5));
+            System.out.println("");
+        }
+    }
+}
