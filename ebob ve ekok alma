@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Giris {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Sayi1 ve Sayi2 giriniz : ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int ekok,ebob=1;
+
+        ekok= (n1 > n2) ? n1 : n2;
+
+        while(true)
+        {
+            if( ekok % n1 == 0 && ekok % n2 == 0 )
+            {
+                System.out.printf("Sayi1 ve Sayi2 sayılarının EKOK'u %d \n", n1, n2, ekok);
+                break;
+            }
+            ++ekok;
+        }
+
+        while(n1 != n2)
+        {
+            if(n1 > n2)
+                n1 -= n2;
+            else
+                n2 -= n1;
+        }
+
+        System.out.println("Sayi1 ve Sayi2 sayılarının EBOB'u = " + n1);
+    }
+}
