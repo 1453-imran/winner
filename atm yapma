@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Giris {
+
+    public static void main(String[] args) {
+
+        Scanner atm = new Scanner(System.in);
+        int bakiye= 10000, islem, tutar;
+
+        System.out.println("Bakiyeniz: " + bakiye);
+        System.out.print("\n****İSLEMLER****\n");
+        System.out.print("\n1. Para Çekme");
+        System.out.print("\n2. Para Yatırma");
+        System.out.print("\n3. Bakiye sorgulama");
+        System.out.print("\n4. Kart İade");
+        System.out.print("\nİsleminizi Seciniz: ");
+         islem = atm.nextInt();
+        switch(islem) {
+            case 1:
+                System.out.println("Bakiyeniz = " + bakiye);
+                System.out.print("Çekmek istediğiniz tutarı giriniz: ");
+                 tutar = atm.nextInt();
+                if(tutar > bakiye) {
+                    System.out.print("Yetersiz bakiye. Tekrar giriniz: ");
+                    tutar = atm.nextInt();
+                }
+                bakiye -= tutar;
+                System.out.println("Yeni bakiyeniz = " + bakiye);
+                break;
+            case 2:
+                System.out.println("Bakiyeniz = " + bakiye);
+                System.out.print("Yatırmak istediğiniz tutarı giriniz: ");
+                tutar = atm.nextInt();
+                bakiye += tutar;
+                System.out.println("Yeni bakiyeniz = " + bakiye);
+                break;
+            case 3:
+                System.out.println("Bakiyeniz = " + bakiye);
+                break;
+            case 4:
+                System.out.println("Kartınızı almayı unutmayınız.!!");
+            default:
+                System.out.println("Yanlıs islem secitiniz. Tekrar giriniz.");
+        }
+    }
+}
