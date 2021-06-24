@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Giris {
+
+    public static void main(String[] args) {
+        int maxSayi = 10;
+        int ilkSayi = 0;
+        int sonSayi = 1;
+
+        System.out.print("Fibonacci Seri "+maxSayi+" sayısı:");
+
+        for (int i = 1; i <= maxSayi; ++i)
+        {
+            System.out.print(ilkSayi+" ");
+                        int sum = ilkSayi + sonSayi;
+            ilkSayi = sonSayi;
+            sonSayi = sum;
+        }
+
+    }
+
+}
