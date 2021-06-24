@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Giris {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int k1=0,k2=1,k3,i,k;
+        System.out.print("K Sayısını Girin:");  k = input.nextInt();
+        System.out.print(k1+" "+k2);
+
+        for(i=2;i<=k;++i){
+            k3=k1+k2;
+            System.out.print(" "+k3);
+            k1=k2;
+            k2=k3;
+        }
+        System.out.println();
+    }
+}
