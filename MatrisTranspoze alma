@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Giris {
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int i, j, satir,sutun;
+    System.out.print("Kac satir kac sutun olacak gir: ");
+     satir = input.nextInt();
+     sutun = input.nextInt();
+    int dizi[][] = new int[satir][sutun];
+    System.out.print("Soldan saga matrisi yaz:");
+    for(i = 0; i < satir; i++)
+    {
+        for(j = 0; j < sutun; j++)
+        {
+            dizi[i][j] = input.nextInt();
+            System.out.print(" ");
+        }
+    }
+    System.out.println("Girdiğin Matris ");
+    for(i = 0; i < satir; i++)
+    {
+        for(j = 0; j < sutun; j++)
+        {
+            System.out.print(dizi[i][j]+" ");
+        }
+        System.out.println(" ");
+    }
+    System.out.println("Transpoz Matris ");
+    for(i = 0; i < sutun; i++)
+    {
+        for(j = 0; j < satir; j++)
+        {
+            System.out.print(dizi[j][i]+" ");
+        }
+        System.out.println(" ");
+    }
+}
+}
